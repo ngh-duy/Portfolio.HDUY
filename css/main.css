@@ -74,6 +74,7 @@ header .header-content .social-links a i {
 }
 header .header-content button {
   padding: 10px;
+  border-radius: 7px;
   background: linear-gradient(to bottom, #1a2a80, #3b38a0, #7a85c1, #b2b0e8);
   cursor: pointer;
 }
@@ -150,6 +151,7 @@ header .header-image img {
   }
   header .header-content button {
     padding: 10px;
+    border-radius: 7px;
     background: linear-gradient(to bottom, #1a2a80, #3b38a0, #7a85c1, #b2b0e8);
     cursor: pointer;
   }
@@ -176,7 +178,7 @@ header .header-image img {
 .about .about-content p {
   color: white;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   text-align: center;
 }
 
@@ -205,7 +207,7 @@ header .header-image img {
 .experience .experience-content p {
   color: white;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   text-align: center;
 }
 .experience .experience-skill {
@@ -427,7 +429,7 @@ header .header-image img {
 .project .project-content p {
   color: white;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   text-align: center;
 }
 .project .project-list {
