@@ -1,0 +1,13 @@
+@import "../Helpers/_variable";
+
+.about {
+  margin: 45px 160px;
+  .about-content {
+    h1 {
+      @include style-title;
+    }
+    p{
+      @include style-content;
+    }
+  }
+}
