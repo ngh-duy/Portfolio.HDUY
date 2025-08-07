@@ -1,8 +1,9 @@
 @import "../Helpers/_variable";
 
 .project {
-  margin: 45px 160px;
+  margin: 45px 150px;
   position: relative;
+  // overflow: hidden;
   .project-content {
     h1 {
       @include style-title;
@@ -69,6 +70,23 @@
           }
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .project {
+    margin: 20px;
+    .project-content {
+      h1 {
+        font-size: $textTitle-h1;
+      }
+      p {
+        font-size: $text-p;
+      }
+    }
+    .project-list {
+      grid-template-columns: 1fr; // Chuyển sang một cột trên
+      margin: 20px;
     }
   }
 }

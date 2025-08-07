@@ -2,6 +2,7 @@
 
 .about {
   margin: 45px 160px;
+  overflow: hidden;
   .about-content {
     h1 {
       @include style-title;
@@ -10,4 +11,18 @@
       @include style-content;
     }
   }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 20px;
+    .about-content {
+      h1 {
+        font-size: $textTitle-h1;
+      }
+      p {
+        font-size: $text-p;
+      }
+    }
+  }
+  
 }

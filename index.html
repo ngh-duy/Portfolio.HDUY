@@ -22,13 +22,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Nguyen Duy - My portfolio</title>
   </head>
   <body>
     <!-- header  -->
-    <header>
+    <header class="header wow animate__animated animate__fadeIn">
       <div class="header-content">
-        <h1>Nguyễn Duy</h1>
+        <h1 class=" wow animate__animated animate__fadeInDown">Nguyễn Duy</h1>
         <h2>Intern Frontend Developer</h2>
         <p>
           " Coding is my medium to shape better digital worlds — practical,
@@ -63,9 +67,9 @@
       </div>
     </header>
     <!-- about  -->
-    <section class="about">
+    <section class="about wow animate__animated animate__fadeIn">
       <div class="about-content">
-        <h1>About Me</h1>
+        <h1 class="wow animate__animated animate__fadeInDown">About Me</h1>
         <p>
           I am a passionate Frontend Developer with a keen interest in creating
           user-friendly and visually appealing web applications. My journey in
@@ -77,7 +81,7 @@
     <!-- experience -->
     <section class="experience">
       <div class="experience-content">
-        <h1>Experience</h1>
+        <h1 class=" wow animate__animated animate__fadeInDown">Experience</h1>
         <p>
           I have hands-on experience in HTML, CSS, and JavaScript, and I am
           currently expanding my knowledge in React.js. My goal is to create
@@ -86,21 +90,21 @@
       </div>
       <div class="experience-skill">
         <div class="language">
-          <div class="box-language">language</div>
+          <div class="box-language wow animate__animated  animate__zoomIn">language</div>
           <div class="boxSkill-language">
-            <img
+            <img class="wow animate__animated  animate__fadeInDownBig"
               src="../assets/images/js.svg"
               width="55px"
               height="55px"
               alt=""
             />
-            <img
+            <img class="wow animate__animated  animate__fadeInDownBig"
               src="../assets/images/html.svg"
               width="55px"
               height="55px"
               alt=""
             />
-            <img
+            <img class="wow animate__animated  animate__fadeInDownBig"
               src="../assets/images/css.svg"
               width="55px"
               height="55px"
@@ -108,10 +112,10 @@
             />
           </div>
         </div>
-        <div class="framework">
-          <div class="box-framework">framework</div>
+        <div class="framework ">
+          <div class="box-framework wow animate__animated  animate__zoomIn">framework</div>
           <div class="boxSkill-framework">
-            <img
+            <img class="wow animate__animated  animate__fadeInDownBig"
               src="../assets/images/reactjs.svg"
               width="55px"
               height="55px"
@@ -125,21 +129,21 @@
           </div>
         </div>
         <div class="library">
-          <div class="box-library">library</div>
+          <div class="box-library wow animate__animated  animate__zoomIn">library</div>
           <div class="boxSkill-library">
-            <img
+            <img class="wow animate__animated  animate__fadeInDownBig"
               src="../assets/images/redux.svg"
               width="55px"
               height="55px"
               alt=""
             />
-            <img
+            <img class="wow animate__animated animate__fadeInDownBig"
               src="../assets/images/tailwind.svg"
               width="55px"
               height="55px"
               alt=""
             />
-            <img
+            <img class="wow animate__animated  animate__fadeInDownBig"
               src="../assets/images/scss.svg"
               width="55px"
               height="55px"
@@ -151,9 +155,9 @@
       <div class="rain-container"></div>
     </section>
     <!-- project  -->
-    <section class="project">
+    <section class="project wow animate__animated animate__fadeIn">
       <div class="project-content">
-        <h1>Projects</h1>
+        <h1 class="wow animate__animated animate__fadeInDown">Projects</h1>
         <p>
           I have worked on several projects that showcase my skills in web
           development. Each project has been a learning experience, allowing me
@@ -161,7 +165,7 @@
         </p>
       </div>
       <div class="project-list">
-        <a href="">
+        <a href="" class="animate__fadeInRightBig wow animate__fadeInUpBig">
           <div class="project-item">
             <img src="../assets/images/sharingLink.png" alt="" />
             <div class="project-info">
@@ -180,7 +184,7 @@
             </div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="animate__fadeInLeftBig wow animate__fadeInUpBig">
           <div class="project-item">
             <img src="../assets/images/portfolio.png" alt="" />
             <div class="project-info">
@@ -205,5 +209,9 @@
     <img class="background" src="../assets/images/background.gif" alt="" />
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
